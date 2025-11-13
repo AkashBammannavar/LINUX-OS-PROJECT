@@ -1,9 +1,18 @@
-:- Project Overview
+:- Project Overview :
 
 This project automates user account creation and group assignment in Linux systems using a Bash script.
 The script reads data from a text file (users.txt), where each line defines a username and their group memberships.
 
 It simplifies the process of adding multiple users, setting passwords, and ensuring proper permissions — ideal for system administrators or DevOps engineers.
+
+--> How the Script Works
+ Reads the users.txt file line by line.
+ Extracts each username and associated groups.
+ Checks if the user already exists; if not, creates it.
+ Adds the user to all specified groups.
+ Creates a home directory and sets appropriate permissions.
+ (Optional) You can configure default passwords or SSH access.
+ 
 1. Script Configuration
 
 PASSWORD_FILE="/var/secure/user_passwords.txt"
@@ -99,3 +108,15 @@ This helps admins retrieve login details safely later.
 
 Records that the user creation process is finished.
 Displays a message showing where to find logs and password files.
+
+--> Features
+
+✅ Bulk user creation from text file
+✅ Group management automation
+✅ Checks for existing users
+✅ Error handling for invalid entries
+✅ Customizable (can add password or SSH setup logic)
+
+👨‍💻Author
+Akash Bammannavar
+Linux & Cloud Enthusiast | DevOps Learner | Automation Projects
