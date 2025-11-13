@@ -1,0 +1,12 @@
+# User Management Automation - Employee List
+# Format: username; group1,group2,group3
+
+akash; sudo,dev,www-data
+sunil; dev,www-data
+vinayak; sudo,testing
+kiran; hr,finance
+mira; sudo
+omkar; dev,www-data
+chetan; design,marketing
+ravi; devops,www-data
+raj; dev,testing
